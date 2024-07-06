@@ -1,0 +1,15 @@
+<form #appointmentForm="ngForm" (ngSubmit)="createAppointment(appointmentForm)">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" ngModel>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" ngModel>
+
+  <label for="date">Date</label>
+  <input type="date" id="date" name="date" ngModel>
+
+  <label for="time">Time</label>
+  <input type="time" id="time" name="time" ngModel>
+
+  <button type="submit">Create Appointment</button>
+</form>
